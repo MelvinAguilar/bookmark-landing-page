@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Rubik", sans-serif;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+
+  details[open] img {
+    transform: rotate(180deg);
+  }
+
+  div[hidden] {
+    display: none;
+  }
+
+  body {
+    min-height: 100vh;
+    overflow-x: hidden;
+    position: relative;
+  }
+
+  body.lock-scroll {
+    overflow: hidden;
+    height: 100vh;
+  }
+}
+
+@layer components {
+  .transition-menu {
+    transition: all 220ms linear;
+  }
+
+  :is(a, button, input, textarea, select, details, summary):focus-visible {
+    outline: theme('colors.soft-blue') solid 0.188rem;
+    outline-offset: 0.188rem;
+  }
+
+  input.border-red-500:focus-visible {
+    --tw-bg-opacity: 1;
+    outline-color: rgb(239 68 68 / var(--tw-bg-opacity));
+  }
+
+  .form :is(a, button, input, textarea, select, details, summary):focus-visible,
+  footer :is(a, button, input, textarea, select, details, summary):focus {
+    outline-color: #fff;
+  }
+
+  .border-selected {
+    position: relative;
+  }
+
+  .border-selected::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    height: 2px;
+    background-color: red;
+    width: 100%;
+  }
+
+  .width-fill-available {
+    width: -webkit-fill-available;
+  }
+
+  .filter-dark {
+    filter: invert(1) hue-rotate(180deg);
+  }
+
+  .filter-logo-white {
+    filter: invert(1) brightness(6) hue-rotate(180deg);
+  }
+
+  .transition-filter {
+    transition: filter 220ms linear;
+    -webkit-transition: -webkit-filter 220ms linear;
+  }
+
+  .banner-1,
+  .banner-2 {
+    position: relative;
+  }
+
+  .banner-1::after {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -1;
+    border-radius: 9999px;
+    top: 3rem;
+    left: 4rem;
+    height: 10rem;
+    width: 275%;
+    background-color: theme('colors.soft-blue');
+  }
+
+  @media screen and (min-width: 768px) {
+    .banner-1::after {
+      top: 9rem;
+      left: 12rem;
+      height: 22rem;
+    }
+
+    .banner-2::after {
+      top: 9.6rem;
+      right: 3.6rem;
+      height: 10rem;
+      width: 150%;
+    }
+  }
+
+  .banner-2::after {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -1;
+    border-radius: 9999px;
+    top: 9.6rem;
+    right: 39.6rem;
+    height: 22rem;
+    width: 100vw;
+    background-color: theme('colors.soft-blue');
+  }
+}
+
+@layer utilities {
+  ::-webkit-scrollbar {
+    width: 15px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: #F1F1F1;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: theme('colors.soft-blue');
+    border-radius: 20px;
+    border: 3px solid transparent;
+    background-clip: content-box;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: hsl(223, 100%, 75%);
+  }
+}
