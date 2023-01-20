@@ -12,7 +12,6 @@ const Footer = () => {
             alt="Bookmark"
             width={148}
             height={25}
-            loading="lazy"
             className="transition duration-300 ease-in-out"
           />
         </a>
@@ -55,7 +54,6 @@ const Footer = () => {
                   aria-hidden="true"
                   width={24}
                   height={24}
-                  loading="lazy"
                   className="hover:filter-orange"
                 />
               </a>
@@ -68,7 +66,6 @@ const Footer = () => {
                   aria-hidden="true"
                   width={24}
                   height={24}
-                  loading="lazy"
                   className="hover:filter-orange"
                 />
               </a>

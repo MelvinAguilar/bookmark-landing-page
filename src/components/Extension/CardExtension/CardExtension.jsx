@@ -3,14 +3,7 @@ const CardExtension = ({ icon, title, description, className = "" }) => {
     <div
       className={`${className} bg-line flex h-fit w-full max-w-[17.75rem] flex-col items-center gap-[1.875rem] rounded-2xl border border-very-dark-blue/10  p-6 pt-[2rem]`}
     >
-      <img
-        src={icon}
-        alt=""
-        aria-hidden="true"
-        width={100}
-        height={100}
-        loading="lazy"
-      />
+      <img src={icon} alt="" aria-hidden="true" width={100} height={100} />
       <div className="mt-[0.1875rem] mb-[1.875rem] text-center">
         <h3 className="text-[1.125rem] font-bold tracking-[0.09em] text-very-dark-blue">
           {title}

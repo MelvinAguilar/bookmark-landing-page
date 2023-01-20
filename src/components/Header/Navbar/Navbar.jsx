@@ -58,7 +58,6 @@ const Navbar = ({ toggleMenu, isMenuOpen }) => {
                   aria-hidden="true"
                   width={24}
                   height={24}
-                  loading="lazy"
                 />
               </a>
             </li>
@@ -74,7 +73,6 @@ const Navbar = ({ toggleMenu, isMenuOpen }) => {
                   aria-hidden="true"
                   width={24}
                   height={24}
-                  loading="lazy"
                 />
               </a>
             </li>

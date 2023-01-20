@@ -22,7 +22,7 @@ const Introduction = () => {
           A clean and simple interface to organize your favourite websites. Open
           a new browser tab and see your sites load instantly. Try it for free.
         </p>
-        <div className="mt-8 flex flex-col justify-center gap-[12px] md:my-[0.5625rem] md:flex-row md:justify-start">
+        <div className="mt-8 flex flex-col justify-center gap-[0.75rem] md:my-[0.5625rem] md:flex-row md:justify-start">
           <a
             href="#"
             className="rounded-md border-[0.188rem] border-soft-blue bg-soft-blue py-[0.655rem] px-[1.521rem] text-[0.875rem] font-bold text-white transition duration-300 hover:bg-white hover:text-soft-blue"
