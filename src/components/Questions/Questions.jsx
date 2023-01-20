@@ -13,7 +13,7 @@ const Questions = () => {
 
       <div className="mx-auto mt-[3.5rem] mb-[3.125rem] max-w-[33.75rem]">
         <details className="border-t border-very-dark-blue/50">
-          <summary className="bg-very-light-gray flex w-full cursor-pointer items-center justify-between rounded-md py-[1.1875rem] font-bold tracking-[-0.02em] text-very-dark-blue md:pr-[1.3125rem] md:text-normal">
+          <summary className="bg-very-light-gray flex w-full cursor-pointer items-center justify-between rounded-md py-[1.1875rem] font-bold tracking-[-0.02em] text-very-dark-blue transition duration-300 hover:text-soft-red md:pr-[1.3125rem] md:text-normal">
             What is bookmark?
             <img
               src={arrow}
@@ -31,7 +31,7 @@ const Questions = () => {
           </p>
         </details>
         <details className="border-t border-very-dark-blue/50">
-          <summary className="bg-very-light-gray flex w-full cursor-pointer items-center justify-between rounded-md pt-[1.1875rem] pb-[1.375rem] font-bold tracking-[-0.01em] text-very-dark-blue md:pr-[1.3125rem] md:text-normal">
+          <summary className="bg-very-light-gray flex w-full cursor-pointer items-center justify-between rounded-md pt-[1.1875rem] pb-[1.375rem] font-bold tracking-[-0.01em] text-very-dark-blue transition duration-300 hover:text-soft-red md:pr-[1.3125rem] md:text-normal">
             How can i request a new browser?
             <img
               src={arrow}
@@ -52,7 +52,7 @@ const Questions = () => {
           </p>
         </details>
         <details className="border-t border-very-dark-blue/50">
-          <summary className="bg-very-light-gray flex w-full cursor-pointer items-center justify-between rounded-md pt-[1.375rem] pb-[1rem] font-bold tracking-[-0.02em] text-very-dark-blue md:pr-[1.3125rem] md:text-normal">
+          <summary className="bg-very-light-gray flex w-full cursor-pointer items-center justify-between rounded-md pt-[1.375rem] pb-[1rem] font-bold tracking-[-0.02em] text-very-dark-blue transition duration-300 hover:text-soft-red md:pr-[1.3125rem] md:text-normal">
             Is there a mobile app?
             <img
               src={arrow}
@@ -71,7 +71,7 @@ const Questions = () => {
           </p>
         </details>
         <details className="border-y border-very-dark-blue/50">
-          <summary className="bg-very-light-gray flex w-full cursor-pointer items-center justify-between rounded-md py-[1.3125rem] font-bold tracking-[-0.02em] text-very-dark-blue md:pr-[1.3125rem] md:text-normal">
+          <summary className="bg-very-light-gray flex w-full cursor-pointer items-center justify-between rounded-md py-[1.3125rem] font-bold tracking-[-0.02em] text-very-dark-blue transition duration-300 hover:text-soft-red md:pr-[1.3125rem] md:text-normal">
             What about other Chromium browsers?
             <img
               src={arrow}
@@ -93,7 +93,7 @@ const Questions = () => {
       <div className="mt-8 flex justify-center">
         <a
           href="#"
-          className="rounded-md bg-soft-blue py-[0.8438rem] px-[1.7081rem] text-[0.875rem] text-white"
+          className="rounded-md border-[0.188rem] border-soft-blue bg-soft-blue py-[0.6558rem] px-[1.5201rem] text-[0.875rem] text-white transition duration-300 hover:bg-white hover:text-soft-blue"
         >
           More info
         </a>

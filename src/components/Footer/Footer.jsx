@@ -16,23 +16,34 @@ const Footer = () => {
             className="transition duration-300 ease-in-out"
           />
         </a>
-        <ul className="flex flex-col items-center justify-center gap-4 tracking-[0.05em] md:ml-[4rem] md:flex-row md:gap-[2.75rem]">
-          <li>
-            <a href="#" className="text-sm uppercase text-white">
-              Features
-            </a>
-          </li>
-          <li>
-            <a href="#" className="text-sm uppercase text-white">
-              Pricing
-            </a>
-          </li>
-          <li>
-            <a href="#" className="ml-0.5 text-sm uppercase text-white">
-              Contact
-            </a>
-          </li>
-        </ul>
+        <nav aria-label="Footer">
+          <ul className="flex flex-col items-center justify-center gap-4 tracking-[0.05em] md:ml-[4rem] md:flex-row md:gap-[2.75rem]">
+            <li>
+              <a
+                href="#"
+                className="text-sm uppercase text-white transition duration-300 hover:text-soft-red"
+              >
+                Features
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                className="text-sm uppercase text-white transition duration-300 hover:text-soft-red"
+              >
+                Pricing
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                className="ml-0.5 text-sm uppercase text-white transition duration-300 hover:text-soft-red"
+              >
+                Contact
+              </a>
+            </li>
+          </ul>
+        </nav>
 
         <div className="flex-1">
           <ul className="flex items-center justify-end gap-[2.5rem]">
@@ -45,6 +56,7 @@ const Footer = () => {
                   width={24}
                   height={24}
                   loading="lazy"
+                  className="hover:filter-orange"
                 />
               </a>
             </li>
@@ -57,6 +69,7 @@ const Footer = () => {
                   width={24}
                   height={24}
                   loading="lazy"
+                  className="hover:filter-orange"
                 />
               </a>
             </li>

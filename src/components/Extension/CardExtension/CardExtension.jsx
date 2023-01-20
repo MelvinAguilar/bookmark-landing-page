@@ -1,7 +1,7 @@
 const CardExtension = ({ icon, title, description, className = "" }) => {
   return (
     <div
-      className={`${className} flex h-fit w-full max-w-[17.75rem] flex-col items-center gap-[1.875rem] rounded-2xl border border-very-dark-blue/10  p-6 pt-[2rem]`}
+      className={`${className} bg-line flex h-fit w-full max-w-[17.75rem] flex-col items-center gap-[1.875rem] rounded-2xl border border-very-dark-blue/10  p-6 pt-[2rem]`}
     >
       <img
         src={icon}
@@ -22,7 +22,7 @@ const CardExtension = ({ icon, title, description, className = "" }) => {
 
       <a
         href="#"
-        className="w-full rounded-md bg-soft-blue py-[0.8438rem] px-[1.7081rem] text-center text-[0.875rem] text-white"
+        className="w-full rounded-md border-[0.188rem] border-soft-blue bg-soft-blue py-[0.6558rem] px-[1.437rem] text-center text-[0.875rem] text-white transition  duration-300 hover:bg-white hover:text-soft-blue"
       >
         Add & Install Extension
       </a>

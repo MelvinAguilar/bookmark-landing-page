@@ -37,7 +37,6 @@ const Form = () => {
               id="mail"
               className="relative"
               nameGroup="mail"
-              type="email"
               autoComplete="off"
               placeholder="Enter your email address"
               label="Input your email"
@@ -54,6 +53,8 @@ const Form = () => {
                 }),
               }}
               validation={errors.mail}
+              aria-invalid={errors.mail ? "true" : "false"}
+              aria-describedby={errors.mail ? "mail-error" : null}
             >
               <div aria-live="polite" aria-atomic="true" className="w-full">
                 {errors.mail?.type === "required" && (
@@ -66,7 +67,7 @@ const Form = () => {
             </InputField>
             <button
               type="submit"
-              className="h-[3rem] w-full rounded-lg bg-soft-red text-white"
+              className="h-[3rem] w-full rounded-lg border-[0.188rem] border-soft-red bg-soft-red py-[0.6558rem] text-white transition duration-300 hover:bg-white hover:text-soft-red"
             >
               Contact Us
             </button>

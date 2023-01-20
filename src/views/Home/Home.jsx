@@ -8,9 +8,9 @@ import Footer from "../../components/Footer/Footer";
 
 const Home = () => {
   return (
-    <div>
+    <>
       <Header />
-      <main>
+      <main id="main">
         <Introduction />
         <Features />
         <Extension />
@@ -18,7 +18,7 @@ const Home = () => {
         <Form />
       </main>
       <Footer />
-    </div>
+    </>
   );
 };
 

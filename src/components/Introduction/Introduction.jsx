@@ -10,7 +10,7 @@ const Introduction = () => {
           aria-hidden="true"
           width={657}
           height={466}
-          className="mx-auto lg:max-w-[125%]"
+          className="mx-auto rwd:max-w-[125%]"
         />
       </div>
 
@@ -22,16 +22,16 @@ const Introduction = () => {
           A clean and simple interface to organize your favourite websites. Open
           a new browser tab and see your sites load instantly. Try it for free.
         </p>
-        <div className="mt-8 flex flex-col justify-center gap-4 md:my-[0.5625rem] md:flex-row md:justify-start">
+        <div className="mt-8 flex flex-col justify-center gap-[12px] md:my-[0.5625rem] md:flex-row md:justify-start">
           <a
             href="#"
-            className="rounded-md bg-soft-blue py-[0.8438rem] px-[1.7081rem] text-[0.875rem] font-bold text-white"
+            className="rounded-md border-[0.188rem] border-soft-blue bg-soft-blue py-[0.655rem] px-[1.521rem] text-[0.875rem] font-bold text-white transition duration-300 hover:bg-white hover:text-soft-blue"
           >
             Get it on Chrome
           </a>
           <a
             href="#"
-            className="rounded-md bg-white py-[0.8438rem] px-[1.7081rem] text-[0.875rem] font-bold text-gray-700 shadow-2xl"
+            className="rounded-md border-[0.188rem] border-white bg-white py-[0.655rem] px-[1.521rem] text-[0.875rem] font-bold text-gray-700 shadow-2xl transition duration-300 hover:border-very-dark-blue"
           >
             Get it on Firefox
           </a>

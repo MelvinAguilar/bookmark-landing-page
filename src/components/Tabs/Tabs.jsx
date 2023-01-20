@@ -67,8 +67,8 @@ const Tabs = () => {
                 aria-selected={selectedTab === index}
                 aria-controls={`tab-panel-${index}`}
                 tabIndex={selectedTab === index ? "0" : "-1"}
-                className={`min-w-[15.2325rem] border-b-2 px-6 py-4 tracking-[0.04em] text-very-dark-blue/50 md:px-[2.6875rem] md:py-[1.625rem] ${
-                  selectedTab === index && "border-selected border-soft-red"
+                className={`border-tab relative min-w-[15.2325rem] border-b-2 px-6 py-4 tracking-[0.04em] text-very-dark-blue/50 transition duration-300 hover:text-soft-red md:px-[2.6875rem] md:py-[1.625rem] ${
+                  selectedTab === index && "border-selected"
                 }`}
                 onClick={() => handleTabClick(index)}
               >

@@ -27,6 +27,8 @@ const inputField = ({
         <img
           src={exclamation}
           className="absolute right-3 top-1/2 z-[4] -translate-y-1/2 transform"
+          alt=""
+          aria-hidden="true"
         />
       )}
       {/* Set the react-hook validation here */}

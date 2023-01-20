@@ -32,12 +32,6 @@
 
 #
 
-# Todo:
-
-- [ ] Update the size of the blue blocks made with :after
-- [ ] Add animation on hover
-- [ ] etc
-
 <div align="center">
 
 ![](./design/desktop-preview.jpg)

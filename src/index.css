@@ -13,6 +13,7 @@
 
   details[open] img {
     transform: rotate(180deg);
+    filter: brightness(0) saturate(100%) invert(52%) sepia(43%) saturate(4016%) hue-rotate(326deg) brightness(98%) contrast(99%);
   }
 
   div[hidden] {
@@ -32,8 +33,9 @@
 }
 
 @layer components {
-  .transition-menu {
-    transition: all 220ms linear;
+  .transition-visibility {
+    --transition: 200ms ease-in-out;
+    transition: transform var(--transition), visibility var(--transition), opacity var(--transition);
   }
 
   :is(a, button, input, textarea, select, details, summary):focus-visible {
@@ -41,29 +43,33 @@
     outline-offset: 0.188rem;
   }
 
-  input.border-red-500:focus-visible {
-    --tw-bg-opacity: 1;
-    outline-color: rgb(239 68 68 / var(--tw-bg-opacity));
-  }
-
   .form :is(a, button, input, textarea, select, details, summary):focus-visible,
   footer :is(a, button, input, textarea, select, details, summary):focus {
     outline-color: #fff;
   }
 
-  .border-selected {
-    position: relative;
+  input.border-red-500:focus-visible,
+  .bg-soft-red:focus-visible {
+    outline-color: rgb(239 68 68);
   }
 
-  .border-selected::after {
+  .border-tab::after {
     content: "";
-    display: block;
     position: absolute;
-    bottom: 0px;
-    left: 0;
-    height: 2px;
-    background-color: red;
     width: 100%;
+    height: 0.1875rem;
+    border-radius: 0.25rem;
+    background-color: red;
+    bottom: 0;
+    left: 0;
+    transform-origin: center;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .border-tab.border-selected::after {
+    transform-origin: center;
+    transform: scaleX(1);
   }
 
   .width-fill-available {
@@ -78,6 +84,10 @@
     filter: invert(1) brightness(6) hue-rotate(180deg);
   }
 
+  .filter-orange {
+    filter: brightness(0) saturate(100%) invert(52%) sepia(43%) saturate(4016%) hue-rotate(326deg) brightness(98%) contrast(99%);
+  }
+
   .transition-filter {
     transition: filter 220ms linear;
     -webkit-transition: -webkit-filter 220ms linear;
@@ -88,32 +98,21 @@
     position: relative;
   }
 
+  .bg-line {
+    background: url("./assets/images/bg-dots.svg") no-repeat left 15.8125rem;
+  }
+
   .banner-1::after {
     content: "";
     display: block;
     position: absolute;
     z-index: -1;
-    border-radius: 9999px;
-    top: 3rem;
-    left: 4rem;
-    height: 10rem;
-    width: 275%;
+    border-radius: 624.9375rem;
+    bottom: 3%;
+    left: 15%;
+    height: 74%;
+    width: 400%;
     background-color: theme('colors.soft-blue');
-  }
-
-  @media screen and (min-width: 768px) {
-    .banner-1::after {
-      top: 9rem;
-      left: 12rem;
-      height: 22rem;
-    }
-
-    .banner-2::after {
-      top: 9.6rem;
-      right: 3.6rem;
-      height: 10rem;
-      width: 150%;
-    }
   }
 
   .banner-2::after {
@@ -121,18 +120,45 @@
     display: block;
     position: absolute;
     z-index: -1;
-    border-radius: 9999px;
-    top: 9.6rem;
-    right: 39.6rem;
-    height: 22rem;
-    width: 100vw;
+    border-radius: 624.9375rem;
+    top: 26%;
+    right: 15%;
+    height: clamp(9rem, 45vw, 17.375rem);
+    width: 200%;
     background-color: theme('colors.soft-blue');
+  }
+
+  @media screen and (min-width: 54.4375em) {
+    .banner-1::after {
+      top: 5rem;
+    }
+
+    .banner-2::after {
+      top: 32%;
+      right: 56%;
+    }
+  }
+
+  @media screen and (min-width: 87.5rem) {
+    .banner-1::after {
+      bottom: 0;
+      top: 9rem;
+      left: 12rem;
+      height: 22rem;
+    }
+
+    .banner-2::after {
+      top: 9.6rem;
+      right: 39.6rem;
+      height: 22rem;
+      width: 100vw;
+    }
   }
 }
 
 @layer utilities {
   ::-webkit-scrollbar {
-    width: 15px;
+    width: 0.9375rem;
   }
 
   ::-webkit-scrollbar-track {
@@ -141,12 +167,31 @@
 
   ::-webkit-scrollbar-thumb {
     background-color: theme('colors.soft-blue');
-    border-radius: 20px;
-    border: 3px solid transparent;
+    border-radius: 1.25rem;
+    border: 0.1875rem solid transparent;
     background-clip: content-box;
   }
 
   ::-webkit-scrollbar-thumb:hover {
     background-color: hsl(223, 100%, 75%);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+      scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+      -webkit-animation-duration: 0.01ms !important;
+      animation-duration: 0.01ms !important;
+      -webkit-animation-iteration-count: 1 !important;
+      animation-iteration-count: 1 !important;
+      -webkit-transition-duration: 0.01ms !important;
+      -o-transition-duration: 0.01ms !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
   }
 }

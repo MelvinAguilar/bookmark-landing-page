@@ -4,6 +4,10 @@ module.exports = {
   darkMode: "class",
   theme: {
     extend: {
+      screens: {
+        md: "54.375em",
+        rwd: "87.5em",
+      },
       fontSize: {
         normal: "1.125rem",
       },

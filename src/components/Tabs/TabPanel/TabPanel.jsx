@@ -17,21 +17,20 @@ const TabPanel = ({ title, description, index, selectedTab, image }) => {
           aria-hidden="true"
           width={538}
           height={347}
-          loading="lazy"
           className="mx-auto lg:mx-0"
         />
       </div>
       <div className="text-center md:flex md:flex-col md:gap-[1.5625rem] md:text-left lg:pt-[3.25rem] lg:pl-[4.5rem]">
-        <h2 className="mt-[1.125rem] text-[1.375rem] font-bold leading-none text-very-dark-blue md:text-[2rem]">
+        <h3 className="mt-[1.125rem] text-[1.375rem] font-bold leading-none text-very-dark-blue md:text-[2rem]">
           {title}
-        </h2>
+        </h3>
         <p className="leading-[1.57] text-very-dark-blue/50 md:text-normal">
           {description}
         </p>
         <div className="">
           <a
             href="#"
-            className="mx-auto mt-[0.5rem] block w-max rounded-md bg-soft-blue py-[0.8438rem] px-[1.625rem] text-[0.875rem] font-bold text-white md:mx-0"
+            className="mx-auto mt-[0.5rem] block w-max rounded-md border-[0.188rem] border-soft-blue bg-soft-blue py-[0.6558rem] px-[1.437rem] text-[0.875rem] font-bold text-white transition duration-300 hover:bg-white hover:text-soft-blue md:mx-0"
           >
             More info
           </a>
