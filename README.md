@@ -6,14 +6,14 @@
 
   <h2 align="center">Bookmark landing page solution</h2>
   <p align="center">
-    <a href="https://www.frontendmentor.io/challenges/bookmark-landing-page-5d0b588a9edda32581d29158/hub"><strong>Frontend Mentor Challenge</strong></a>
+    <a href="https://www.frontendmentor.io/solutions/bookmark-landing-page-GAw_0uI4bt"><strong>Frontend Mentor Challenge</strong></a>
     <br />
     <br />
-    <a href="">View Demo</a>
+    <a href="https://bookmark-landing-page-hdez.vercel.app/">View Demo</a>
     ·
-    <a href="" target="_blank">Report Bug</a>
+    <a href="https://github.com/MelvinAguilar/bookmark-landing-page/issues" target="_blank">Report Bug</a>
     ·
-    <a href="" target="_blank">Request Feature</a>
+    <a href="https://github.com/MelvinAguilar/bookmark-landing-page/issues" target="_blank">Request Feature</a>
   </p>
 </div>
 
@@ -25,7 +25,7 @@
   </a>
   <!-- Status -->
     <a href="#">
-    <img src="https://img.shields.io/badge/Status-Pending-E55937?style=for-the-badge" alt="Status">
+    <img src="https://img.shields.io/badge/Status-Completed-brightgreen?style=for-the-badge" alt="Status Completed">
   </a>
 
 </div>
@@ -42,8 +42,8 @@ This is a solution to the [Bookmark landing page challenge on Frontend Mentor](h
 
 <h2 align="center">Links</h2>
 
-<!-- - Solution URL: [Intro section with dropdown navigation (React + Tailwind + Dark mode) (React + SASS) | Frontend Mentor](https://www.frontendmentor.io/solutions/intro-section-with-dropdown-navigation-tmQXOQU78e)
-- Live Site URL: [https://intro-section-with-dropdown-navigation-hdez.vercel.app/](https://intro-section-with-dropdown-navigation-hdez.vercel.app/)  -->
+- Solution URL: [Bookmark landing page (React + TailwindCSS) | Frontend Mentor](https://www.frontendmentor.io/solutions/bookmark-landing-page-GAw_0uI4bt)
+- Live Site URL: [https://bookmark-landing-page-hdez.vercel.app/](https://bookmark-landing-page-hdez.vercel.app/)
 
 <br>
 
